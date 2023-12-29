@@ -33,7 +33,7 @@ namespace DesafioFundamentos.Models
 
             string placa = string.Empty;
             placa = Console.ReadLine();
-            if(ValidarPlaca(placa)){
+            if(ValidarPlaca(placa.ToUpper())){
                 // Verifica se o veículo existe
                 if (veiculos.Any(x => x.ToUpper() == placa.ToUpper()))
                 {
